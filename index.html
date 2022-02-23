@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENU FIXADO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="menu-fixado">
+        <nav>
+            <ul class="navegacao-lista-link">
+                <li><a class="navegacao-links" href="index.html" title="inicio" alt="link para ir pro inicio"><i
+                            class="iconResponse fa-solid fa-house"></i>INICIO</a></li>
+                <li><a class="navegacao-links" href="#" title="sobre" alt="link de sobre nós"><i
+                            class="iconResponse fa-solid fa-book-open"></i>SOBRE</a></li>
+                <li><a class="navegacao-links" href="#" title="contato" alt="link de contato"><i
+                            class="iconResponse fa-solid fa-headset"></i>CONTATO</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <button id="btnMenu" class="btn-menu-dropdown"><i id="menuIcon"></i></button>
+        </nav>
+    </header>
+    <nav class="menu-fixado-real d-none" id="menuSlide">
+        <ul class="navegacao-lista-link-dropdown">
+            <li class="navegacao-itens-dropdown spacing-itens"><a class="navegacao-links" href="#">USUÁRIO</a></li>
+            <li class="navegacao-itens-dropdown spacing-itens"><a class="navegacao-links" href="#">DASHBOARD</a></li>
+            <li id="noticia-item-lista" class="navegacao-itens-dropdown spacing-itens"><a class="navegacao-links"
+                    href="#">NOTICÍAS</a></li>
+            <ul id="sub-item" class="d-none sub-item">
+                <li class="sub-itens-lista">
+                    <p>1</p>
+                </li>
+                <li class="sub-itens-lista">
+                    <p>2</p>
+                </li>
+                <li class="sub-itens-lista">
+                    <p>3</p>
+                </li>
+                <li class="sub-itens-lista">
+                    <p>4</p>
+                </li>
+            </ul>
+            <li class="navegacao-itens-dropdown spacing-itens"><a class="navegacao-links" href="#">NOVIDADES</a></li>
+            <li class="navegacao-itens-dropdown spacing-itens"><a class="navegacao-links" href="#">CONFIGURAÇÕES</a>
+            </li>
+            <li class="navegacao-itens-dropdown spacing-itens"><a class="navegacao-links" href="#">FORMA DE
+                    PAGAMENTO</a></li>
+        </ul>
+    </nav>
+    <main class="container-principal">
+        <section class="secoes">
+            <p>SESSÃO 1</p>
+        </section>
+        <section class="secoes">
+            <p>SESSÃO 2</p>
+        </section>
+        <section class="secoes">
+            <p>SESSÃO 3</p>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p>Copyright 2022</p>
+    </footer>
+</body>
+<script src="\node_modules\jquery\dist\jquery.min.js"></script>
+<script src="script.js"></script>
+
+</html>
