@@ -3,7 +3,7 @@ window.onload= () => {
     $(".icon-dropdown").toggleClass("fa-solid fa-chevron-down");
 }
 
-$("#btnMenu").click(() => {
+$("#btnMenu").on("click", () => {
     $("#menuSlide").slideToggle().toggleClass("d-none");
     $("#menuIcon").toggleClass("fa-solid fa-minus");
     $("#menuIcon").toggleClass("fa-solid fa-bars");
