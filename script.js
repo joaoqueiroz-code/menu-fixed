@@ -15,8 +15,7 @@ const criaSubMenu = (idItemMenu, idItemSubmenu) => {
         $(idItemSubmenu).slideToggle().toggleClass("d-none");
         $(".icon-dropdown").toggleClass("fa-solid fa-chevron-down");
         $(".icon-dropdown").toggleClass("fa-solid fa-chevron-up");
-    
-        
+        $("#menuSlide").toggleClass("scroller")      
     })
 }
 
